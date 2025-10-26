@@ -1,3 +1,5 @@
+package sorting;
+
 public class SelectionSort {
 
     public static int[] sort(int[] mat) {
