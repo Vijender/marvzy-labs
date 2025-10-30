@@ -14,7 +14,7 @@ class TNode {
 
 public class TreeTraversal {
 
-    public static void inOrder(TNode node, ArrayList<Integer> target) {
+    private static void inOrder(TNode node, ArrayList<Integer> target) {
 
         if (node == null) { return; }
 
@@ -24,7 +24,7 @@ public class TreeTraversal {
     }
 
 
-    public static void preOrder(TNode node, ArrayList<Integer> target) {
+    private static void preOrder(TNode node, ArrayList<Integer> target) {
 
         if (node == null) { return; }
 
@@ -34,7 +34,7 @@ public class TreeTraversal {
     }
 
 
-    public static void postOrder(TNode node, ArrayList<Integer> target) {
+    private static void postOrder(TNode node, ArrayList<Integer> target) {
 
         if (node == null) { return; }
 
@@ -44,7 +44,7 @@ public class TreeTraversal {
 
     }
 
-    public static void main(String... args) {
+     static void main() {
         // Create binary tree
         //       1
         //      /  \
@@ -61,23 +61,23 @@ public class TreeTraversal {
         ArrayList<Integer> target = new ArrayList<>();
         inOrder(root, target);
 
-        for (int i = 0; i < target.size(); i++) {
-            System.out.print(target.get(i) + " ");
-        }
+         for (Integer integer : target) {
+             System.out.print(integer + " ");
+         }
         System.out.println();
 
         ArrayList<Integer> target1 = new ArrayList<>();
 
         preOrder(root, target1);
-        for (int i = 0; i < target1.size(); i++) {
-            System.out.print(target1.get(i) + " ");
-        }
+         for (Integer integer : target1) {
+             System.out.print(integer + " ");
+         }
         System.out.println();
         ArrayList<Integer> target2 = new ArrayList<>();
         postOrder(root, target2);
-        for (int i = 0; i < target2.size(); i++) {
-            System.out.print(target2.get(i) + " ");
-        }
+         for (Integer integer : target2) {
+             System.out.print(integer + " ");
+         }
 
     }
 }

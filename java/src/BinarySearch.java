@@ -1,6 +1,5 @@
-public class BinarySearch {
 
-    public static int binarySearch(int[] source, int N, int x) {
+    private static int binarySearch(int[] source, int N, int x) {
 
         int mid = (N%2 == 1) ? (N+1)/2 : (N) / 2;
         int m = mid - 1;
@@ -44,7 +43,7 @@ public class BinarySearch {
         return -1;
      }
 
-    static void main(String... args) {
+     void main() {
         int[] arr = {1,2,3,4,5,10};
 
         int x = 10;
@@ -59,4 +58,4 @@ public class BinarySearch {
         System.out.println(result2);
 
     }
-}
+
