@@ -1,3 +1,5 @@
+package arrays;
+
 public class TwoSum {
 
         static void main() {

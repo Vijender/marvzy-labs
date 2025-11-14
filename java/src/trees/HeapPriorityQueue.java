@@ -1,3 +1,5 @@
+package trees;
+
 import java.util.PriorityQueue;
 
 public class HeapPriorityQueue {

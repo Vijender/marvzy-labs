@@ -1,3 +1,5 @@
+package arrays;
+
 import java.util.HashSet;
 
 public class LongSubStringKChars {
@@ -31,7 +33,7 @@ public class LongSubStringKChars {
 
     static void main() {
 
-        System.out.println("LongSubStringKChars");
+        System.out.println("arrays.LongSubStringKChars");
         System.out.println(new LongSubStringKChars().finalLongestSubstring("abcabcbb", 2));        //Expected  = 4
 
         System.out.println(new LongSubStringKChars().finalLongestSubstring("a", 12));
